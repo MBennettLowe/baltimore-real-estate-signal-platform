@@ -1,0 +1,6 @@
+# Ignore json dumps
+raw_data/
+
+# Environment
+.venv/
+__pycache__/
