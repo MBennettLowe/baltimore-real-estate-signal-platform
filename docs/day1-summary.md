@@ -8,7 +8,7 @@
 - Installed: `requests`, `duckdb`, `dbt-core`, `dbt-duckdb`
 
 ## Endpoint Discovery
-Found and verified 4 live ArcGIS FeatureServer endpoints on data.baltimorecity.gov, each confirmed to return data via a `requests.get()` test. No API keys required — all public FeatureServers.
+Found and verified 5 live ArcGIS FeatureServer endpoints on data.baltimorecity.gov, each confirmed to return data via a `requests.get()` test. No API keys required — all public FeatureServers.
 
 | Dataset | URL | Update Frequency | Auth |
 |---|---|---|---|
@@ -16,5 +16,8 @@ Found and verified 4 live ArcGIS FeatureServer endpoints on data.baltimorecity.g
 | Housing and Building Permits (2019–Present) | https://egisdata.baltimorecity.gov/egis/rest/services/Housing/DHCD_Open_Baltimore_Datasets/FeatureServer/3 | Not stated — confirm by diffing pulls over a few days | None |
 | Vacant Building Notices | https://egisdata.baltimorecity.gov/egis/rest/services/Housing/DHCD_Open_Baltimore_Datasets/FeatureServer/1 | Daily | None |
 | Tax Lien Certificate Sale Properties | https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Tax_Lien_Certificate_Sale_Properties1/FeatureServer | Annual (per tax-sale cycle) | None |
+| Vacant Building Rehabs | https://egisdata.baltimorecity.gov/egis/rest/services/Housing/DHCD_Open_Baltimore_Datasets/FeatureServer/2 | Not stated — confirm by diffing pulls over a few days | None |
+
+*Vacant Building Rehabs was added to the project during extraction (Day 2). It's listed here so all five endpoints are in one place. Dataset page: https://data.baltimorecity.gov/datasets/baltimore::vacant-building-rehabs*
 
 *Layer IDs verified 2026-07-21 — re-check against current docs if revisiting after a gap, since IDs can shift.*
